@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+}
+
+*{
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background: var(--Yellow);
+    font-family: 'Figtree';
+}
+
+main {
+    width: 328px;
+    background: var(--White);
+    margin: 155px auto;
+    padding: 22px;
+    border-radius: 20px;
+    border: solid 1px var(--Black);
+    box-shadow: 8px 8px var(--Black);
+}
+
+.front-page {
+    overflow: hidden;
+    margin-bottom: 24px;
+    height: 202px;
+}
+
+.front-page img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.title {
+    font-size: 0.75rem;
+    font-weight: 800;
+    background: var(--Yellow);
+    border-radius: 3px;
+    margin-left: 0;
+    text-align: center;
+    width: 73px;
+    height: 25px;
+    padding-top: 5.49px;
+}
+
+.pub {
+    font-weight: 500;
+    font-size: .85rem;
+    margin-top: 12.5px;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 1.25rem;
+    margin-top: 17px;
+}
+
+p {
+    color: var(--Grey);
+    font-size: 0.88rem;
+    font-weight: 500;
+    margin-top: 15px;
+    line-height: 21.5px;
+    margin-bottom: 22px;
+}
+
+.profile img {
+width: 32px;
+margin-left: 0;
+margin-right: 0;
+}
+
+.profile {
+    display: flex;
+}
+
+.profile span {
+    font-size: 0.9rem;
+    font-weight: 800;
+    margin-left: 12px;
+}
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: .8rem;
+    font-weight: 500;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+    color: var(--White);
+}
+
+@media only screen and (min-width: 800px) {
+    main {
+        width: 384px;
+        padding: 22.7px;
+    }
+
+    .front-page {
+        height: 200.5px;
+    }
+
+    .title {
+        margin: 0;
+        font-size: 0.88rem;
+        width: 82px;
+        height: 29px;
+        text-align: center;
+    }
+
+    .pub {
+        margin-top: 14px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin-top: 18px;
+    }
+
+    main:hover {
+        box-shadow: 16px 16px var(--Black);
+    }
+
+    main:hover h1 {
+        cursor: pointer;
+        color: var(--Yellow);
+    }
+
+    p {
+        margin-top: 17px;
+        font-size: 1rem;
+        line-height: 24px;
+    }
+}
